@@ -8,27 +8,28 @@
 </head>
 
 <body>
-
+    <!--Div for the grid container, everything is inside the grid which I have used to precisely control the layout -->
 	<div class="grid-container">
 	  
-        
-	  <div class="grid-item onstate-logo"> 
-          <h1 id="large-font">Onstate Logo</h1>
+      <!--Grid cell containing Onstate logo-->  
+	  <div class="onstate-logo"> 
+          <h1 class="large-font">Onstate Logo</h1>
         </div>
-        
-	  <div class="grid-item onstate-number"> 
-          <p id="medium-font">+44(0) 113 386 0020</p>
+      
+      <!--Grid cell containing Onstate number-->
+	  <div class="onstate-number"> 
+          <p class="medium-font">+44(0) 113 386 0020</p>
         </div>
         
       <!--Grid cell containing dropdown menu -->  
-      <div class="grid-item menu"> 
+      <div class="menu"> 
          <ul> 
           <li class="dropdown"> <a href="#" class="dropbtn">MENU</a> 
               
             <div class="dropdown-content"> 
-                <a href="#" class="dropdown">Menu Item Here</a> 
-                <a href="#" class="dropdown">Menu Item Here</a>
-                <a href="#" class="dropdown">Menu Item Here</a>
+                <a href="#" class="dropdown">Menu Item</a> 
+                <a href="#" class="dropdown">Menu Item</a>
+                <a href="#" class="dropdown">Menu Item</a>
               
             </div>
               
@@ -36,6 +37,7 @@
          </ul> 
       </div>
 	  
+      <!--Grid cell containing Banner image-->
       <div class="grid-item banner-image"> 
           <img src="https://github.com/Lewisshawww/Onstate-Assessment/blob/master/images/banner.jpeg"> 
         </div>
@@ -43,9 +45,9 @@
         
     
 	  
-        
+      <!--Grid cell containing Onstate info-->  
 	  <div class="grid-item info">
-          <p id="small-font">
+          <p class="small-font grey-font">
               Shopify 
               <br> Design & UX 
               <br> Build 
@@ -54,38 +56,64 @@
               <br> Art Direction
           </p>
       </div>
-        
+      
+      <!--Grid cell containing company name and tagline-->
       <div class="grid-item company-tagline"> 
-          <h2 id="large-font">Baudoin & Lange</h2> 
-          <h3 id="large-font">Taking an artisan shoemaker to the next level in their digital journey</h3> 
-        
-          <br> 
+          <h2 class="large-font">Baudoin & Lange</h2> 
+          <h3 class="large-font grey-font">Taking an artisan shoemaker to the next level in their digital journey</h3>  
           
-          <p id="small-font">nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst </p>
+          <p class="small-font">nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst </p>
       </div>
 	  
+        <!--Grid cell containing background image with text over the top-->
         <div class="grid-item background-image">
-            <img src="images/background-image.jpeg">
+            <img src="https://github.com/Lewisshawww/Onstate-Assessment/blob/master/images/background-image.jpeg">
         </div>
         
-	  
+	  <!--Grid cell containing text over the top of background image-->
 	  <div class="grid-item center-text"> 
-          <h1 id="large-font">Our purpose is to make beautiful shoes comfortable again</h1>
+          <h1 class="large-font">Our purpose is to make beautiful shoes comfortable again</h1>
       </div>
+      
+      <!--Grid cells containing company statistics since working with Onstate-->  
+      <div class="grid-item statistics1"> 
+          <h1 class="large-font">300%</h1> 
+          <p class="small-font grey-font">Increase in conversion rate</p>
+        </div> 
         
-      <div class="grid-item statistics1"> <h1 id="large-font">300%</h1> <p id="small-font">Increase in conversion rate</p></div>  
-	  <div class="grid-item statistics2"> <h1 id="large-font">50K</h1>  <p id="small-font">Visitors in the first 3 months</p></div>
-      <div class="grid-item statistics3"> <h1 id="large-font">Increase</h1>  <p id="small-font">In channel share</p></div> 
-        
-      <div class="grid-item co-founder-quote"> <h1 id="large-font">"Onstate painlessly migrated us from Squarespace to Shopify, giving us a richer online
-          experience for us to engage our customers more with our brand"</h1> <br> <h3 id="small-font">Bo Van Langeveld, Co-Founder at Baudoin and Lange</h3></div>
-        
-        <div class="grid-item next-project"> <h1 id="large-font">Next project</h1>  <h2 id="large-font">Brown Thomas</h2></div>
-        
-        <div class="grid-item next-page-btn">
-            <a href="#"> <img src="images/next-page.png" id="next-page"></a>
+	  <div class="grid-item statistics2"> 
+          <h1 class="large-font">50K</h1>  
+          <p class="small-font grey-font">Visitors in the first 3 months</p>
         </div>
-        <div class="grid-item footer"> <h1 id="large-font">Onstate Logo Here</h1></div>
+        
+      <div class="grid-item statistics3"> 
+          <h1 class="large-font">Increase</h1>  
+          <p class="small-font grey-font">In channel share</p>
+        </div> 
+       
+      <!--Grid cell containing quote from company co-founder-->  
+      <div class="grid-item co-founder-quote"> 
+          <h1 class="large-font">"Onstate painlessly migrated us from Squarespace to Shopify, giving us a richer online
+          experience for us to engage our customers more with our brand"</h1> 
+          <br> 
+          <h3 class="small-font grey-font">Bo Van Langeveld, Co-Founder at Baudoin and Lange</h3>
+        </div>
+        
+        <!--Grid cell containing name of next project-->
+        <div class="grid-item next-project"> 
+            <h1 class="large-font">Next project</h1>  
+            <h2 class="large-font grey-font">Brown Thomas</h2>
+        </div>
+        
+        <!--Grid cell containing next page button-->
+        <div class="grid-item next-page-btn">
+            <a href="#"> <img src="https://github.com/Lewisshawww/Onstate-Assessment/blob/master/images/next-page.png"></a>
+        </div>
+        
+        <!--Grid cell containing footer with onstage logo-->
+        <div class="grid-item footer"> 
+            <h1 class="large-font">Onstate Logo</h1>
+        </div>
         
                 
 	   
