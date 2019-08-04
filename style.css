@@ -5,25 +5,32 @@ body {
     width: 100%;
 }
 
+ /*Custom fonts here */
 @font-face {
-    font-family: "Inter-SemiBold";
-    src: url("fonts/Inter-SemiBold.otf");
+    font-family: Inter-SemiBold;
+    src: url(fonts/Inter-SemiBold.otf);
     
     font-family: Inter-Regular;
     src: url(fonts/Inter-Regular.otf);
     
 }
 
-#large-font {
+/*Classes for generic font sizes*/
+.large-font {
     font-size: 44px;
 }
 
-#medium-font {
+.medium-font {
     font-size: 20px;
 }
 
-#small-font {
+.small-font {
     font-size: 18px;
+}
+
+ /*Class for grey font*/
+.grey-font {
+    color: darkgrey;
 }
 
 a {
@@ -38,7 +45,7 @@ ul{
     list-style-type: none;
 }
 
-
+ /*Container for grid, everything is inside this grid so i can make the layout precise*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);   
@@ -47,12 +54,7 @@ ul{
     
 }
 
-.grid-item {
-    border: solid black 2px;
-}
-
-
-
+ /*CSS rules for the dropdown menu, and hover rules to make it more interactive*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -60,6 +62,7 @@ ul {
   overflow: hidden;
   background-color: hotpink;
   width: 80px;
+  
 }
 
 li {
@@ -97,6 +100,7 @@ li.dropdown {
   text-decoration: none;
   display: block;
   text-align: left;
+    width: 100%;
 }
 
 .dropdown-content a:hover {
@@ -107,24 +111,29 @@ li.dropdown {
   display: block;
 }
 
+ /*grid cell for Onstate logo*/
 .onstate-logo {
     grid-column: 2 / 8;
-    height: 80px;
+    height: 100px;
     padding-left: 10px;
 }
 
+ /*grid cell for Onstate number*/
 .onstate-number {
     grid-column: 8 / 11;
-    font-family: 'Inter-SemiBold';
+    font-family: Inter-SemiBold;
     font-size: 20px;
-   
+    padding-top: 10px;  
     
 }
 
+ /*grid cell for dropdown menu*/
 .menu {
     grid-column: 11 / 13;
+    padding-top: 20px;
 }
 
+ /*grid cell for banner image*/
 .banner-image {
   grid-row: 2;
   grid-column: 1/ 13;
@@ -132,6 +141,7 @@ li.dropdown {
   
 }
 
+ /*grid cell for Onstate info*/
 .info {
     grid-row: 3;
     grid-column: 2 / 5;
@@ -141,19 +151,21 @@ li.dropdown {
     top: 30px;
 }
 
+ /*grid cell for company info and tagline*/
 .company-tagline {
     grid-row:3;
     grid-column: 7/ 12;
-    font-family: 'Inter-SemiBold';
+    font-family: Inter-SemiBold;
 }
 
-
+ /*grid cell for background image with center text over the top*/
 .background-image {
     grid-row:4;
     grid-column: 2 / 12;
     height: 900px;
 }
 
+ /*grid cell for center text over top of image*/
 .center-text {
     grid-row: 4;
     grid-column: 5 / 9;
@@ -166,25 +178,30 @@ li.dropdown {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+ /*grid cells for company statistics after working with Onstate*/
 .statistics1 {
     grid-row: 5;
     grid-column: 1 / 5;
     text-align: center;
     height: 150px;
+    font-family: Inter-SemiBold;
 }
 
 .statistics2 {
     grid-row: 5;
     grid-column: 5 / 9;
     text-align: center;
+    font-family: Inter-SemiBold;
 }
 
 .statistics3 {
     grid-row: 5;
     grid-column: 9 / 13;
     text-align: center;
+    font-family: Inter-SemiBold;
 }
 
+ /*grid cell for quote from company co-founder*/
 .co-founder-quote {
     grid-row: 6;
     grid-column: 3/11;
@@ -193,14 +210,18 @@ li.dropdown {
     height: 450px;
     padding-top: 20px;
     box-sizing:border-box;
+    font-family: Inter-SemiBold;
 }
 
+ /*grid cell for next project name*/
 .next-project {
     grid-row: 7;
     grid-column: 7 / 11;
     height: 250px;
+    font-family: Inter-SemiBold;
 }
 
+ /*grid cell for next page button*/
 .next-page-btn {
     grid-row: 7;
     grid-column: 12 / 13;
@@ -215,15 +236,19 @@ li.dropdown {
     top: 30%;
 }
 
+ /*grid cell for footer with Onstate logo inside*/
 .footer {
     grid-row: 8;
     grid-column: 1 / 13;
     height: 200px;
     padding-left: 60px;
     padding-top: 30px;
+    background-color: darkgrey;
 }
 
-/*Changes for mobile layout*/
+/*Changes for Ipad layout
+
+mostly involves moving grid cells into new positions and changing grid row heights to fit content*/
 
 @media screen and (max-width: 900px) {
     
@@ -276,6 +301,9 @@ li.dropdown {
     }
 }
 
+/*Further changes for mobile layout
+
+mostly involves moving grid cells into new positions and changing grid row heights to fit content*/
 @media screen and (max-width: 600px) {
     .onstate-logo {
         grid-column: 1 / 10;
@@ -287,7 +315,8 @@ li.dropdown {
     
     .menu {
         grid-column: 10/ 13;
-    }
+        
+    } 
     
     .banner-image {
     grid-column: 1/ 13;
@@ -300,6 +329,7 @@ li.dropdown {
     
     .company-tagline {
         grid-column: 1 / 13;
+        text-align: center;
     }
     
     .background-image {
@@ -310,7 +340,7 @@ li.dropdown {
     .center-text {
     grid-column: 3 / 11;
     height: 150px;
-    top: 150px;
+    top: 100px;
     }
     
     .statistics1 {
@@ -329,17 +359,30 @@ li.dropdown {
     
     .co-founder-quote {
     grid-column: 2/12;
-    height: 650px;
+    height: 700px;
     padding-top: 0px;
     }
     
     .next-project {
     grid-column: 2 / 9;
-    height: 250px;
+    height: 280px;
     }
 
     .next-page-btn {
     grid-column: 9 / 13;
     
+    }
+}
+ /* ever further changes for smaller resolution mobile layout
+
+mostly involves moving grid cells into new positions and changing grid row heights to fit content*/
+@media screen and (max-width: 400px) {
+    .co-founder-quote {
+    grid-column: 2/12;
+    height: 830px;
+    }
+    
+    .dropdown-content {
+        right: 0;
     }
 }
