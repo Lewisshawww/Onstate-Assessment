@@ -228,7 +228,7 @@ li.dropdown {
     
 }
 
-#next-page {
+.next-page-fixed-size {
     height: 60px;
     width: 60px;
     position: relative;
